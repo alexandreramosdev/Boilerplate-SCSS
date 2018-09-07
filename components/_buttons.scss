@@ -1,0 +1,35 @@
+// Buttom
+// //////////////////////////
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+
+    padding: 1rem 3rem;
+
+    background-color: $color-fill;
+    border-radius: $global-radius;
+    box-shadow: 0 0.2rem 0.5rem rgba($color-black, 0.2);
+
+    transition: $global-transition;
+    cursor: pointer;
+  }
+
+  &:hover {
+    color: $color-link;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 1.5rem rgba($color-black, 0.2);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.7rem 1.3rem rgba($color-black, 0.3);
+  }
+}
+
+

@@ -1,0 +1,21 @@
+.main-footer {
+
+  > .copyright{
+    padding: 1rem 0;
+    background-color: $color-fill;
+    color: $color-link;
+    font-weight: 700;
+
+    > .wrapper {
+      max-width: 90rem;
+      @include push--auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    & .logotipo-red {
+      width: 3rem;
+    }
+  }
+}

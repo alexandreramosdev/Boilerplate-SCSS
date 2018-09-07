@@ -1,0 +1,25 @@
+/* ==========================================================================
+   #LISTS
+   ========================================================================== */
+
+ul,
+ol {
+  padding: 0;
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+  list-style: none;
+
+  > li {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}

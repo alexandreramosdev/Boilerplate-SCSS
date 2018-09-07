@@ -1,0 +1,40 @@
+/* 
+* Breakpoints
+* ========================================================================== */
+
+   $bp-small: 37.5em; //600px;
+   $bp-medium: 56.25em; //900px;
+   $bp-large: 75em; //1200px;
+   $bp-xlarge: 112.5em; //1800px;
+
+
+
+@mixin bp-small {
+  @media (min-width: $bp-small) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media (min-width: $bp-medium) {
+    @content;
+  }
+}
+
+@mixin bp-large {
+  @media (min-width: $bp-large) {
+    @content;
+  }
+}
+
+@mixin bp-xlarge {
+  @media (min-width: $bp-xlarge) {
+    @content;
+  }
+}
+
+// @mixin bp-full {
+//   @media (min-width: $bp-full) {
+//     @content;
+//   }
+// }

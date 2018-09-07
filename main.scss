@@ -1,0 +1,40 @@
+ @import 'settings/global';
+ @import 'settings/color';
+ @import 'settings/fonts';
+
+ @import 'tools/breakpoints';
+ @import 'tools/push--auto';
+ @import 'tools/pseudo';
+ @import 'tools/underline-links';
+
+ @import 'generic/reset';
+ @import 'generic/box-sizing';
+ @import 'generic/font-face';
+ @import 'generic/shared';
+
+ @import 'base/html';
+ @import 'base/body';
+ @import 'base/headings';
+ @import 'base/links';
+ @import 'base/lists';
+ @import 'base/tables';
+ @import 'base/hr';
+ @import 'base/images';
+ @import 'base/blockquote';
+
+//  @import 'objects/*';
+
+ @import 'components/buttons';
+
+ @import 'components/main-header';
+ @import 'components/topbar';
+ @import 'components/top-share';
+ @import 'components/social-share';
+ @import 'components/top-navigation';
+
+ @import 'components/section-sobre';
+ @import 'components/section-projetos';
+
+ @import 'components/main-footer';
+
+//  @import 'utilities/*';
