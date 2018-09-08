@@ -1,6 +1,8 @@
 # Tools
 
-É o lugar onde você vai guardar seus mixins e funções necessárias para a construção de seus layouts. Pode ser qualquer coisa, desde mixins de font-face, até mixins de animações, etc. Repare que aqui, nada é gerado diretamente como CSS final também.
+É o lugar onde você vai guardar seus mixins e funções necessárias para a construção de seus layouts.
+Pode ser qualquer coisa, desde mixins de `font-face`, até mixins de animações, etc.
+Repare que aqui, nada é gerado diretamente como CSS final também.
 
 ```scss
 @mixin font-brand() {
