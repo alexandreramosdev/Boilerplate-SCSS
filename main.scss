@@ -1,59 +1,22 @@
 @charset "UTF-8";
 
-// ==== SETTINGS =================
+// ==== SETTINGS =============
+@import 'settings/1_settings';
 
-@import 'settings/global';
-@import 'settings/color';
-@import 'settings/fonts';
+// ==== TOOLS ================
+@import 'tools/2_tools';
 
-// ==== TOOLS =================
-
-@import 'tools/functions-px-in-em';
-@import 'tools/mixins-breakpoints';
-@import 'tools/mixins-push--auto';
-@import 'tools/mixins-pseudo';
-@import 'tools/mixins-underline-links';
-@import 'tools/mixins-absolute-middle';
-@import 'tools/mixins-hidden';
-@import 'tools/mixins-clearfix';
-
-// ==== GENERIC =================
-
-@import 'generic/reset';
-@import 'generic/box-sizing';
-@import 'generic/font-face';
-@import 'generic/shared';
+// ==== GENERIC ==============
+@import 'generic/3_generic';
 
 // ==== BASE =================
+@import 'base/4_base';
 
-@import 'base/html';
-@import 'base/body';
-@import 'base/headings';
-@import 'base/links';
-@import 'base/lists';
-@import 'base/tables';
-@import 'base/hr';
-@import 'base/images';
-@import 'base/blockquote';
+// ==== OBJECTS ==============
+ @import 'objects/5_objects';
 
-// ==== OBJECTS =================
+// ==== COMPONENTS ===========
+@import 'components/6_components';
 
-//  @import 'objects/*';
-
-// ==== COMPONENTS =================
-
-@import 'components/buttons';
-@import 'components/main-header';
-@import 'components/topbar';
-@import 'components/top-share';
-@import 'components/social-share';
-@import 'components/top-navigation';
-
-@import 'components/section-sobre';
-@import 'components/section-projetos';
-
-@import 'components/main-footer';
-
-// ==== UTILITIES /  =================
-
-//  @import 'utilities/*';
+// ==== UTILITIES /  ========
+ @import 'utilities/7_utilities';

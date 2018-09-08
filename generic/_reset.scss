@@ -1,10 +1,7 @@
 /* ==========================================================================
-   #RESET
+*   #RESET
    ========================================================================== */
-
-/**
- * A very simple reset that sits on top of Normalize.css.
- */
+//* A very simple reset that sits on top of Normalize.css.
 
 body,
 h1, h2, h3, h4, h5, h6,
@@ -15,23 +12,17 @@ fieldset, legend {
   padding: 0;
 }
 
-
-/**
- * Remove default table spacing.
- */
+//* Remove default table spacing.
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-
-/**
- * 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
- *    on fieldsets.
- */
+//* 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
+//* on fieldsets.
 
 fieldset {
-  min-width: 0; /* [1] */
+  min-width: 0; //[1]
   border: 0;
 }

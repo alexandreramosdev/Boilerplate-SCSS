@@ -1,5 +1,4 @@
-/* Colors
-   ========================================================================== */
+//* Colors
 
 // Colors shouldn't be used directly but reassigned
 $color-white: #fff;
@@ -12,16 +11,20 @@ $color-green: #c6d301;
 $color-dark-green: #375d2f;
 $color-darker-green: #2a4724;
 
+
 // Text
 $color-bg: $color-white;
 $color-text: $color-dark-grey;
+
 
 // Links
 $color-link: $color-white;
 $color-hover: $color-green;
 
+
 // Borders
 $color-border: $color-very-light-grey;
+
 
 // Fills
 $color-fill: $color-green;

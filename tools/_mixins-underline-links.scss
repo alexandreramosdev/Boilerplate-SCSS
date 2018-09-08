@@ -1,12 +1,11 @@
 @mixin underline-links {
-
   &:link,
   &:active {
     position: relative;
     text-transform: uppercase;
     
     &::after {
-      @include pseudo;
+      @include pseudo();
       left: 0;
       height: 2px;
       background-color: $color-hover;
