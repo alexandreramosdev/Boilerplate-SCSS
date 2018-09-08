@@ -1,11 +1,10 @@
 // Buttom
-// //////////////////////////
 
 .btn {
   &,
   &:link,
   &:visited {
-    font-size: 1.4rem;
+    font-size: em(16);
     text-transform: uppercase;
 
     padding: 1rem 3rem;

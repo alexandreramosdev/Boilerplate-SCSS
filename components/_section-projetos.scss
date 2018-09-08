@@ -1,16 +1,15 @@
 .section-projetos{
-  padding: 7rem 0;
+  padding: em(70) 0;
   background: url('../../../img/bg-section-projetos.png') center no-repeat;
   background-size: cover;
 
   > .title {
     text-align: center;
     color: $color-fill;
-    // margin-bottom: 0;
   }
 
   > .box {
-    width: 55rem;
+    width: 550px;
     @include push--auto;
     text-align: center;
     color: $color-white;
@@ -24,7 +23,6 @@
 
     > p {
       margin-bottom: 0;
-      font-size: 1.2rem
     }
   }
 
@@ -33,14 +31,14 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 90rem;
-    @include push--auto;    
+    max-width: 900px;
+    @include push--auto;
   }
 
   .projeto {
     margin: .3rem;
     position: relative;
-    box-shadow: 0 0 5rem rgba($color-black, .4)
+    box-shadow: 0 0 50px rgba($color-black, .4)
   }
 
   .overlay {
@@ -68,10 +66,10 @@
       @include pseudo('\f067');
       font-family: 'Font Awesome 5 Free';
       font-weight: 900;
-      width: 2rem;
-      height: 2rem;
+      width: 20px;
+      height: 20px;
       color: transparent;
-      top: 2.5rem;
+      top: 25px;
       left: 50%;
       transform: translateX(-50%);
       transition: $global-transition

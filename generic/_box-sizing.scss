@@ -1,20 +1,18 @@
-/* ==========================================================================
-   #BOX-SIZING
-   ========================================================================== */
-
 /**
- * More sensible default box-sizing:
- * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
- */
+* #BOX-SIZING
+*
+* More sensible default box-sizing:
+* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+*/
 
  * {
-   &,
-   &:before,
-   &:after {
+   &:not(img),
+   &::before,
+   &::after {
      box-sizing: inherit;
     }
   }
-  
+
   html {
     box-sizing: border-box;
   }

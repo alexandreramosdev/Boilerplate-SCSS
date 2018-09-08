@@ -1,12 +1,12 @@
 .topbar {
   display: flex;
   justify-content: space-between;
-  max-width: 90rem;
+  max-width: 900px;
   padding: 2rem 1rem;
 
   @include push--auto;
 
   > .logo {
-    width: 26rem;
+    width: 260px;
   }
 }

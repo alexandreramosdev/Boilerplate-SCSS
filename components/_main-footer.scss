@@ -7,7 +7,7 @@
     font-weight: 700;
 
     > .wrapper {
-      max-width: 90rem;
+      max-width: 900px;
       @include push--auto;
       display: flex;
       justify-content: space-between;
@@ -15,7 +15,7 @@
     }
 
     & .logotipo-red {
-      width: 3rem;
+      width: 30px;
     }
   }
 }

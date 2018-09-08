@@ -1,40 +1,59 @@
- @import 'settings/global';
- @import 'settings/color';
- @import 'settings/fonts';
+@charset "UTF-8";
 
- @import 'tools/breakpoints';
- @import 'tools/push--auto';
- @import 'tools/pseudo';
- @import 'tools/underline-links';
+// ==== SETTINGS =================
 
- @import 'generic/reset';
- @import 'generic/box-sizing';
- @import 'generic/font-face';
- @import 'generic/shared';
+@import 'settings/global';
+@import 'settings/color';
+@import 'settings/fonts';
 
- @import 'base/html';
- @import 'base/body';
- @import 'base/headings';
- @import 'base/links';
- @import 'base/lists';
- @import 'base/tables';
- @import 'base/hr';
- @import 'base/images';
- @import 'base/blockquote';
+// ==== TOOLS =================
+
+@import 'tools/functions-px-in-em';
+@import 'tools/mixins-breakpoints';
+@import 'tools/mixins-push--auto';
+@import 'tools/mixins-pseudo';
+@import 'tools/mixins-underline-links';
+@import 'tools/mixins-absolute-middle';
+@import 'tools/mixins-hidden';
+@import 'tools/mixins-clearfix';
+
+// ==== GENERIC =================
+
+@import 'generic/reset';
+@import 'generic/box-sizing';
+@import 'generic/font-face';
+@import 'generic/shared';
+
+// ==== BASE =================
+
+@import 'base/html';
+@import 'base/body';
+@import 'base/headings';
+@import 'base/links';
+@import 'base/lists';
+@import 'base/tables';
+@import 'base/hr';
+@import 'base/images';
+@import 'base/blockquote';
+
+// ==== OBJECTS =================
 
 //  @import 'objects/*';
 
- @import 'components/buttons';
+// ==== COMPONENTS =================
 
- @import 'components/main-header';
- @import 'components/topbar';
- @import 'components/top-share';
- @import 'components/social-share';
- @import 'components/top-navigation';
+@import 'components/buttons';
+@import 'components/main-header';
+@import 'components/topbar';
+@import 'components/top-share';
+@import 'components/social-share';
+@import 'components/top-navigation';
 
- @import 'components/section-sobre';
- @import 'components/section-projetos';
+@import 'components/section-sobre';
+@import 'components/section-projetos';
 
- @import 'components/main-footer';
+@import 'components/main-footer';
+
+// ==== UTILITIES /  =================
 
 //  @import 'utilities/*';
