@@ -1,12 +1,61 @@
+.nav-bar {
+  transition: $global-transition;  
+}
+
+.nav-bar.--fixed{
+  background-color: rgba($color-black, .8);
+  position: fixed;
+  width: 100%;
+  height: 101px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
 .topbar {
   display: flex;
   justify-content: space-between;
   max-width: 900px;
-  padding: 2rem 1rem;
-
+  padding: rem(20) rem(10) 0;
   @include push--auto;
+  transition: $global-transition;
 
   > .logo {
-    width: 260px;
+    .img {
+      width: 260px;
+
+      @media only screen and (max-width: 768px) {
+      width:150px;
+      }
+    }
+
+    .numero {
+      display: none;
+    }
+  }
+}
+
+.topbar.--fixed{
+  > .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+
+    .img {
+      width: 150px;
+    }
+
+    .numero {
+      display: block;
+      font-size: rem(20);
+      font-weight: 700;
+      margin-bottom: 0;
+
+      @media (max-width: em(660)) and (min-width: em(600)) {
+        display: none;
+      }
+    }
   }
 }

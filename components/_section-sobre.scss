@@ -1,5 +1,5 @@
 .section-sobre {
-  padding: em(70) 0;
+  padding: rem(70) rem(10);
 
   > .title {
     text-align: center;
@@ -10,26 +10,52 @@
     width: 400px;
     @include push--auto;
 
+    @include for-tablet-portrait-down {
+      width: 300px;
+    }
+
     &::after {
       @include pseudo;
-      background: url('../../../img/sobre-artagao.png') center no-repeat;
+      background: url('../../assets/img/sobre-artagao.png') center no-repeat;
       background-size: 100%;
       height: 100px;
-      width: 400px;
+      width: 100%;
       top: 0;
       left: 0;
     }
   }
 
-  > .wrapper{
+  > .wrapper {
     display: flex;
-    max-width: 900px;
     align-items: center;
-    @include push--auto
+    @include push--auto;
+    max-width: 900px;
+
+    @include for-tablet-portrait-down {
+      flex-wrap: wrap;
+    }
+  }
+
+  .content{
+    max-width: 450px;
+    @include push--auto;
+
+    .btn {
+      @include push--auto;
+    }
   }
 
   .img {
-    width: 400px;
-    margin-right: 2rem;
-  }  
+    max-width: 50%;
+    margin-right: rem(20px);
+
+    @include for-tablet-landscape-down {
+      @include push--auto;
+      margin-bottom: rem(10px);    
+    }
+
+    @include for-tablet-portrait-down {
+      max-width: 75%;
+    }
+  }
 }

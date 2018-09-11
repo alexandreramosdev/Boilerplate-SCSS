@@ -1,0 +1,22 @@
+.social-share{   
+  > .icon:not(:first-child){
+    margin-left: rem(10);    
+
+    &.--green{
+      margin-left: rem(15);
+    }
+  }
+
+  > .icon{
+    transition: $global-transition;
+
+    &.--green {
+      color: $color-hover;
+      font-size: 25px;
+
+      &:hover {
+        color: $color-dark-green;
+      }
+    }
+  }
+}

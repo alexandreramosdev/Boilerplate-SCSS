@@ -1,7 +1,30 @@
 .main-header {
-  height: 750px;
+  height: 100%;
   background: 
-    url('../../../img/artagçao.png') 30% 100%  no-repeat,
-    url('../../../img/bg-hero.png') top center  no-repeat;
-  background-size: 600px, cover;
+    url('../../assets/img/Rectangle-top.svg') no-repeat,
+    url('../../assets/img/bg-hero.png') no-repeat;
+  background-position: center top, top center;
+  background-size: fixed, cover;
+
+  @include for-tablet-landscape-down {
+    background: 
+    url('../../assets/img/Rectangle-top.svg') no-repeat,
+    url('../../assets/img/bg-hero.png') no-repeat;
+  background-position: 53% top, top center;
+  background-size: fixed, cover;
+  }
+
+  @media only screen and (max-width: em(768)) {
+    background: 
+    url('../../assets/img/Rectangle-top.svg') no-repeat,
+    url('../../assets/img/bg-hero.png') no-repeat;
+  background-position: 58% top, top center;
+  background-size: fixed, cover;
+  }
+
+  @include for-tablet-portrait-down {
+    background: url('../../assets/img/bg-hero.png') no-repeat;
+  background-position: top center;
+  background-size: cover;
+  }
 }

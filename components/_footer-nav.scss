@@ -1,0 +1,105 @@
+.footer-nav {
+  height: 100%;
+  background: url('../../assets/img/bg-footer.png') center no-repeat;
+  background-size: cover;
+
+  > .wrapper {
+    max-width: 900px;
+    display: flex;
+    @include push--auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 rem(10) ;
+
+    @media only screen and (max-width: em(768)) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .footer-navigation{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: rem(10);
+    margin-right: rem(10);
+
+
+    .link {
+      @include underline-links;
+    }
+  }
+
+  .btn-return{
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: $color-link;
+    border-radius: $global-radius;
+    position: relative;
+    color: $color-fill;
+    font-size: 45px;
+    line-height: 1;
+    text-align: center;
+    transition: $global-transition;
+    margin-left: rem(20);
+
+    &:hover{
+      color: $color-link;
+      background: $color-fill;
+    }
+  }
+  
+}
+
+.footer-candidato {
+  margin-top: rem(10);
+  display: flex;
+  align-self: flex-end;
+  align-items: flex-end;
+
+  @media only screen and (max-width: em(768)){
+    margin-top: rem(20);
+  }
+
+  .candidato {
+    width: 280px;
+    margin-left: -100px;
+
+
+    > .registro{
+      color: $color-link;
+      font-size: rem(85);
+      line-height: .8;
+      margin-bottom: 0;
+      text-align: right;
+
+      @include for-tablet-portrait-down {
+        font-size: rem(60)
+      }  
+    }
+    > .logo {
+      width: 180px;
+      display: block;
+      margin-left: auto;
+      margin-right: 0;
+
+      @include for-tablet-portrait-down {
+        width: 140px;
+      }  
+    }
+  }
+
+  .img {
+    width: 260px;  
+    margin-left: rem(10);
+
+    @include for-tablet-portrait-down {
+      width: 200px;
+      margin-left: 0;
+    }  
+  }
+}

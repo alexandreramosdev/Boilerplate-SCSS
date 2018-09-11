@@ -1,11 +1,15 @@
-@import 'buttons';
 @import 'main-header';
 @import 'topbar';
-@import 'top-share';
-@import 'social-share';
-@import 'top-navigation';
+@import 'top-nav';
+@import 'header-cta';
+
 
 @import 'section-sobre';
-@import 'section-projetos';
+@import 'section-acao';
+@import 'section-novidades';
 
 @import 'main-footer';
+@import 'footer-nav';
+@import 'footer-copy';
+
+@import 'modal';
