@@ -1,0 +1,38 @@
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg)
+  }
+  20%{
+    transform: rotate(4deg)
+  }
+  50%{
+    transform: rotate(-4deg)
+  }
+  100%{
+    transform: rotate(0deg)
+  }
+}
+
+// animate Scroll
+
+[data-anime]{
+  opacity: 0;
+  transition: $global-transition;
+}
+
+[data-anime="left"]{
+  transform: translateX(-5rem);
+}
+
+[data-anime="right"]{
+  transform: translateX(5rem);
+}
+
+[data-anime="up"]{
+  transform: translateY(5rem);
+}
+
+[data-anime].animate{
+  opacity: 1;
+  transform: translate(0);
+}

@@ -1,0 +1,217 @@
+.wrapper-services {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  background:
+    url('../../img/svg/bg-section-gray.svg') center 620px / cover no-repeat,
+    linear-gradient(
+    to right,
+    $color-light-green 45%,
+    $color-medium-green 0% );
+  
+  padding-bottom: 50px;
+  margin-bottom: -1px;
+
+  @include for-tablet-landscape-down {
+    flex-direction: column;
+  } 
+
+  > .navigation-services {
+    padding: 50px 0 50px 10px;
+    background-color: $color-light-green;
+
+    @include for-tablet-landscape-down {
+      padding: 0;
+      margin-bottom: 0;
+    } 
+  }
+
+  .wrapper-scrollspy{   
+    padding: 50px 0 50px 30px;
+    background-color: $color-medium-green;
+
+    @include for-tablet-landscape-down {
+      padding: 50px 10px;
+    } 
+  }
+}
+
+.navigation-services { 
+  background-color: $color-light-green;
+
+  .list {
+    width: 280px;
+
+    @include for-tablet-landscape-down {
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+      width: 100%;
+      margin-bottom: 0;
+
+    } 
+  }
+
+  .item{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding-left: 20px;
+    margin: 0;
+    position: relative;
+
+    &:not(:last-child){
+      border-bottom: 2px solid #83b576;
+
+      @include for-tablet-landscape-down {
+        border-bottom: none;
+      }
+    }
+
+    @include for-tablet-landscape-down {
+      flex-direction: column;
+      height: 150px;
+      padding-left: 0;
+      padding: 10px;
+      padding-bottom: 15px;
+      width: 100px;
+      text-align: center;
+    }
+
+    img {
+      margin: 0 10px;
+      width: 70px;
+
+      @include for-tablet-landscape-down {
+        width: 50px;
+        height: 50px;
+        padding-bottom: 10px;
+      }
+    }
+
+    &.-active{
+      background-color: #83b576;
+
+      &::after{
+        @include pseudo;
+        width: 20px;
+        height: 20px;
+        background-color: #83b576;
+        transform: rotate(45deg);
+        right: -7px;
+
+        @include for-tablet-landscape-down {
+          bottom: -15px;
+          left: 50%;
+          transform: rotate(45deg) translateX(-50%);
+        }
+      }
+    }
+  }
+
+  .link {
+    font-size: 23px;
+    color: $color-white;
+    line-height: 1;
+    width: 150px;
+    
+    @include for-tablet-landscape-down {
+      font-size: 16px;
+      width: 100%;
+    }
+  }
+}
+
+.wrapper-scrollspy {
+  .scrollspy-services{
+    max-width: 550px;
+    height: 430px;
+    overflow-y: scroll;
+    padding-right: 20px;
+    box-sizing: content-box;
+
+    scroll-behavior: smooth;
+
+    // scrollbar-arrow-color:#000000;
+    // scrollbar-3dlight-color:#000000;
+    // scrollbar-highlight-color:#FF0000;
+    // scrollbar-face-color:#FFFFFF;
+    // scrollbar-shadow-color:#0000FF;
+    // scrollbar-darkshadow-color:#FFFF00;
+    // scrollbar-track-color:#00FF00;
+    // direction: rtl;
+    
+    &::-webkit-scrollbar {
+      border-radius: 10px;
+      width: 12px;
+      background: rgba($color-white, 0.1);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background: rgba($color-dark-green, 0.5); 
+    }
+
+
+    @include for-tablet-landscape-down {
+      margin-left: auto;
+      margin-right: auto;
+    } 
+  }
+
+  .btn.-white {
+    margin-top: 50px;
+    margin-right: 20px;
+
+    @include for-tablet-landscape-down {
+      margin-left: 10%;
+    }
+
+    @include for-tablet-portrait-down {
+      display: block;
+      max-width: 300px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+  }
+
+  span {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $color-white;
+
+    @include for-tablet-portrait-down {
+      display: block;
+      max-width: 300px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+    }
+
+    a{
+      color: $color-white;
+      font-weight: 700;
+    }
+  }
+}
+
+.scrollspy-services {
+  color: $color-white;
+
+  > .title {
+    font-size: 30px;
+  }
+
+  img {
+    border-radius: $global-radius;
+  }
+
+  .caption {
+    margin-bottom: 50px;
+  }
+}

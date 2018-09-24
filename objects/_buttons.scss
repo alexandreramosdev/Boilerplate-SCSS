@@ -5,26 +5,31 @@
   &:link,
   &:visited {
     display: block;
-    padding: rem(15) 0;
-    margin: rem(10) 0;
-    width: 300px;
+    padding: .5em 2em;
 
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+    color: $color-white;
 
-    background-color: $color-hover;
-    border: 1px solid $color-hover;
+    background-color: $color-medium-green;
+    border: 1px solid $color-medium-green;
     border-radius: $global-radius;
     box-shadow: 0 0.2rem 0.5rem rgba($color-black, 0.2);
 
     transition: $global-transition;
     cursor: pointer;
 
-    &.--white{
-      background-color: transparent;
-      border: 1px solid $color-hover;
-      color: $color-hover;
+    &.-green{
+      background-color: $color-green;
+      border: 1px solid $color-green;
+    }
+
+    &.-white{
+      display: inline-block;
+      background-color: $color-white;
+      border: 1px solid $color-white;
+      color: $color-green;
     }
   }
 
@@ -32,12 +37,21 @@
     color: $color-link;
     transform: translateY(-3px);
     box-shadow: 0 1rem 1.5rem rgba($color-black, 0.2);
+
+    &.-white{
+      color: $color-link !important;
+    }
   }
 
   &:active,
   &:focus {
+    color: $color-white !important;
     outline: none;
     transform: translateY(-1px);
     box-shadow: 0 0.7rem 1.3rem rgba($color-black, 0.3);
+
+    &.-white{
+      color: $color-green !important;
+    }
   }
 }

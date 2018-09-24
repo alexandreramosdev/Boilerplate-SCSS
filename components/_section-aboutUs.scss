@@ -1,0 +1,42 @@
+.section-aboutUs {
+  padding: 100px 10px;
+  background: 
+    url('../../img/bg-aboutUs-right.png')right 330px / 610px no-repeat,
+    url('../../img/bg-aboutUs-leftTop.png')0 0 / 600px no-repeat,
+    url('../../img/bg-aboutUs-left.png')0 350px / 800px no-repeat,
+    url('../../img/svg/bg-section-gray.svg')center 650px / cover no-repeat;
+ 
+
+  @media only screen and ( max-width: 1400px ) {
+    background: 
+      url('../../img/bg-aboutUs-right.png')right 500px / 310px no-repeat,
+      url('../../img/bg-aboutUs-leftTop.png')0 130px / 500px no-repeat,
+      url('../../img/bg-aboutUs-left.png')0 450px / 500px no-repeat,
+      url('../../img/svg/bg-section-gray.svg')center 650px / cover no-repeat;
+  }
+
+  @media only screen and ( max-width: 800px ) {
+    background: 
+      url('../../img/bg-aboutUs-right.png')right 800px / 310px no-repeat,
+      url('../../img/bg-aboutUs-leftTop.png')0 130px / 500px no-repeat,
+      url('../../img/bg-aboutUs-left.png')0 450px / 500px no-repeat,
+      url('../../img/svg/bg-section-gray.svg')center 950px / cover no-repeat;
+  }
+
+  > .heading {
+    display: block;
+    width: 182px;
+    height: 37px;
+    @include push--auto;
+
+    background: url('../../img/svg/bg-titles.svg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-transform: uppercase;
+
+    font-size: em(15);
+    font-weight: 900;
+    text-align: center;
+    line-height: 3;
+  }
+}

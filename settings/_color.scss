@@ -1,26 +1,32 @@
 //* Colors
 
 // Colors shouldn't be used directly but reassigned
-$color-white: #fff;
-$color-black: #000;
-$color-very-light-grey: #ccc;
-$color-light-grey: #999;
-$color-medium-grey: #666;
-$color-dark-grey: #3e3e3e;
-$color-green: #c6d301;
-$color-dark-green: #375d2f;
-$color-darker-green: #2a4724;
-$color-red: #c02b3f;
+$color-white: #ffffff;
+$color-black: #000000;
+
+
+$color-very-light-grey: #cccccc;
+     $color-light-grey: #868686;
+    $color-medium-grey: #424649;
+      $color-dark-grey: #232c13;
+
+
+$color-lighter-green: #9ee881;
+  $color-light-green: #9dbf50;
+        $color-green: #6eac5c;
+ $color-medium-green: #60a99e;
+   $color-dark-green: #2a4724;
+
 
 
 // Text
-$color-bg: $color-white;
-$color-text: $color-dark-grey;
+  $color-bg: $color-white;
+$color-text: $color-medium-grey;
 
 
 // Links
-$color-link: $color-white;
-$color-hover: $color-green;
+ $color-link: $color-dark-grey;
+$color-hover: $color-light-green;
 
 
 // Borders
@@ -29,3 +35,6 @@ $color-border: $color-very-light-grey;
 
 // Fills
 $color-fill: $color-green;
+
+// bg form input
+$color-input: #f1eff0;

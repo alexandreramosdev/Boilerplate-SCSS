@@ -1,0 +1,62 @@
+.section-environment {
+  padding: 50px 10px;
+  margin-top: -35px;
+  background:
+    url('../../img/hand-tree.png') 250px bottom / 580px no-repeat,
+    url('../../img/bg-leaf-environment-left.png') left center / 870px no-repeat,
+    url('../../img/bg-leaf-environment-rightTop.png') right -50px / 460px no-repeat,
+    url('../../img/bg-leaf-environment-right.png') right 350px / 350px no-repeat,
+    url('../../img/bg-enviromenment.png') 200px 150px / 850px no-repeat,
+    url('../../img/svg/bg-section-green.svg') center top / cover no-repeat;
+
+    @media only screen and (max-width: 1560px) {
+      background:
+      url('../../img/hand-tree.png') 0% bottom / 580px no-repeat,
+      url('../../img/bg-leaf-environment-left.png') -350px center / 870px no-repeat,
+      url('../../img/bg-leaf-environment-rightTop.png') 120% -50px / 460px no-repeat,
+      url('../../img/bg-leaf-environment-right.png') 120% 350px / 350px no-repeat,
+      url('../../img/bg-enviromenment.png') 200px 150px / 850px no-repeat,
+      url('../../img/svg/bg-section-green.svg') center top / cover no-repeat; 
+    }
+
+    @media only screen and (max-width: 1100px) {
+      background:
+      url('../../img/hand-tree.png') -100px bottom / 580px no-repeat,
+      url('../../img/bg-leaf-environment-left.png') -550px center / 870px no-repeat,
+      url('../../img/bg-leaf-environment-rightTop.png') 130% -50px / 460px no-repeat,
+      url('../../img/bg-leaf-environment-right.png') 130% 350px / 350px no-repeat,
+      url('../../img/bg-enviromenment.png') 50px 150px / 850px no-repeat,
+      url('../../img/svg/bg-section-green.svg') center top / cover no-repeat; 
+    }
+
+    @media only screen and (max-width: 1100px) {
+      background:
+      url('../../img/hand-tree.png') -200px bottom / 580px no-repeat,
+      url('../../img/bg-leaf-environment-left.png') -550px center / 870px no-repeat,
+      url('../../img/bg-leaf-environment-rightTop.png') 150% -50px / 460px no-repeat,
+      url('../../img/bg-leaf-environment-right.png') 150% 350px / 350px no-repeat,
+      url('../../img/bg-enviromenment.png') 50px 150px / 850px no-repeat,
+      url('../../img/svg/bg-section-green.svg') center top / cover no-repeat; 
+    }
+
+    @media only screen and (max-width: 800px) {
+      background:
+      url('../../img/hand-tree.png') -280px bottom / 580px no-repeat,
+      url('../../img/bg-leaf-environment-left.png') -550px center / 870px no-repeat,
+
+      url('../../img/bg-enviromenment.png') 50px 150px / 850px no-repeat,
+      url('../../img/svg/bg-section-green.svg') center top / cover no-repeat;
+    }
+
+    @media only screen and (max-width: 600px) {
+      background:    
+      url('../../img/bg-leaf-environment-left.png') -820px top / 870px no-repeat,
+      url('../../img/bg-enviromenment.png') 50px 150px / 850px no-repeat,
+      url('../../img/svg/bg-section-green.svg') center top / cover no-repeat;
+    }
+    
+
+  > .heading-2{
+    margin-bottom: 50px;
+  }
+}

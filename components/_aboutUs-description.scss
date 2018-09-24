@@ -1,0 +1,41 @@
+.aboutUs-description {
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  margin-top: 130px;
+
+  @media only screen and (max-width: 600px) {
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+
+
+  > .box-description{
+    max-width: 270px;
+    text-align: center;
+    margin: 0 22.5px;
+  }
+}
+
+.box-description {
+  > .box-icon{
+    height: 110px;
+    display: flex;
+  }
+  > .title{
+    font-size: 21px;
+    color: $color-medium-green;
+    font-weight: 400;
+  }
+}
+
+.box-icon {
+  > .icon {
+    display: block;
+    margin: auto auto;
+
+    &:hover {
+      animation: rotate 1s;
+    }
+  }
+}

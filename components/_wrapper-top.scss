@@ -1,0 +1,77 @@
+.wrapper-top {
+  max-width: rem(900);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  @include push--auto;
+
+ @media only screen and (max-width: 840px) {
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+ }
+  
+  
+
+  > .logotipo {
+    margin: 25px 0 10px;
+    margin-left: 10px;
+
+    @include for-tablet-portrait-down {
+      width: 200px;
+      margin-right: auto;
+      
+    }
+  }
+}
+
+.wrapper-navigation {
+  text-align: right;
+  background: url('../../img/svg/bg-top.svg')55px 5px / 440px no-repeat;
+  
+
+  .social-links {
+    margin-bottom: 40px;
+    padding-top: 10px;
+    color: $color-white;
+
+    .link {
+      color: $color-white;
+    }
+
+    .icon {
+      width: 20px;
+      margin-right: 5px;
+    }
+
+    .icon:last-child{
+      width: 23px;
+    }
+
+    > *:not(:last-child){
+      margin-right: 25px;
+    }
+    > *:not(:first-child){
+      margin-left: 25px;
+    }
+  }
+}
+
+.nav-menu {  
+  text-align: center;
+
+  > .link {
+    text-transform: uppercase;    
+    font-size: rem(13);
+    font-weight: 700;
+    letter-spacing: .5px;
+
+    @include for-tablet-portrait-up {
+      @include underline-links;
+    }
+  }
+
+  > .link:not(:last-child) {
+    margin-right: rem(30);
+  }
+}

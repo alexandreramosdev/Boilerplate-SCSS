@@ -1,0 +1,13 @@
+.section-services {
+  padding: 50px 0 0;
+  background: url('../../img/svg/bg-section-white.svg') center top / cover no-repeat;
+  margin-top: -35px;
+  // margin-bottom: -70px;
+
+  > .subtitle {
+    max-width: 900px;
+    text-align: center;
+    @include push--auto;
+    margin-bottom: 50px;
+  }
+}

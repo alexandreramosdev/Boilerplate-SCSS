@@ -1,1 +1,17 @@
+.main-footer {
+  padding: 30px 10px;
+  background: url('../../img/svg/bg-section-medium-green.svg') center top / cover no-repeat;
 
+  > .wrapper-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    @include push--auto;
+
+    font-size: 11px;
+    text-transform: uppercase;
+    color: $color-white;
+    font-weight: 700;
+  }
+}

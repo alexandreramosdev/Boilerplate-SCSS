@@ -5,11 +5,7 @@ body {
   background: $color-bg;
   
   color: $color-text;
-  font-size: $font-size;
+  font-size: rem(15);
   font-family: $font-sans-serif;
   line-height: $line-height;
-  
-  -moz-osx-font-smoothing: grayscale;
-   -webkit-font-smoothing: antialiased;
-           text-rendering: optimizeLegibility;
 }

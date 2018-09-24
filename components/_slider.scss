@@ -1,0 +1,117 @@
+.glide {
+  @include for-tablet-portrait-down {
+    margin-top: 30px;
+  }
+
+  &__slides{
+    white-space: normal !important;
+  }
+
+  &_slide{
+    position: relative;
+    height: 350px;
+    
+    img {
+      object-fit: cover;
+      height: 100%;
+
+      @include for-tablet-landscape-down {
+        opacity: .5;
+      }
+    }
+  }
+
+
+  &__arrows {
+    display: flex;
+    width: 100%;
+    @include push--auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    justify-content: space-between;
+  }
+
+   &__arrow {
+    border: none;
+    background: transparent;
+  
+    font-size: 30px;
+    font-weight: 900;
+    color: $color-white;
+    text-shadow: 0 0 7px rgba($color-green , .8);
+
+    &--left {
+      margin-left: 10%;
+
+      @include for-tablet-landscape-down {
+        margin-left: 5%;
+      }
+    }
+
+    &--right {
+      margin-right: 10%;
+
+      @include for-tablet-landscape-down {
+        margin-right: 5%;
+      }
+    }
+  }
+
+  &__bullets {
+    text-align: center;
+  }
+
+  &__bullet {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+
+    &--active{
+      background-color: $color-medium-green;
+      transform: scale(1.2)
+    }
+  }
+}
+// Action
+
+.glide {
+  .action {    
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    top: 20px;
+    left: 20%;
+
+    > .title{         
+      text-align: left;
+      word-wrap: normal;
+
+      font-size: 50px;
+      line-height: 1;
+      font-weight: 300;
+
+      & .-green{
+        font-weight: 700;
+        color: $color-dark-green;
+      }
+    }
+
+    > .btn {
+      display: block;
+      margin-top: auto;
+      width: 150px;
+      height: 35px;
+      padding: .4em;
+    }
+
+
+  }
+
+}
+ 

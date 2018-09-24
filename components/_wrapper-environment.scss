@@ -1,0 +1,37 @@
+.wrapper-environment {
+  max-width: 900px;
+  @include push--auto;
+
+  > .title {
+    font-size: 53px;
+    font-weight: 300;
+    line-height: 1;
+    color: $color-white;
+
+    max-width: 440px;
+    margin-left: auto;
+    margin-bottom: 50px;
+
+    @media only screen and (max-width: 600px) {
+      text-align: center;
+      margin-right: auto;
+    }
+
+    & .-green{
+      font-weight: 700;
+      color: $color-lighter-green;
+    }
+  }
+
+  > .content{
+    max-width: 440px;
+    margin-left: auto;
+    color: $color-white;
+
+    // text-shadow: 0 0 7px rgba($color-black, .2);
+
+    @media only screen and (max-width: 600px) {
+      margin-right: auto;
+    }
+  }
+}

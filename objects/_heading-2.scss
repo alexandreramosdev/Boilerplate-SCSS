@@ -1,0 +1,20 @@
+.heading-2 {
+  display: block;
+  width: 182px;
+  height: 37px;
+  @include push--auto;
+
+  background: url('../../img/svg/bg-titles.svg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  text-transform: uppercase;
+  font-size: em(15);
+  font-weight: 900;
+  text-align: center;
+  line-height: 3;
+
+  &.-light-green{
+    background: url('../../img/svg/bg-title-lighter-green.svg') no-repeat;
+  }
+}

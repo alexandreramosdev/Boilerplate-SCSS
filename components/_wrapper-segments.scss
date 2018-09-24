@@ -1,0 +1,106 @@
+.wrapper-segments {
+  display: flex;
+  max-width: 900px;
+  justify-content: space-between;
+  @include push--auto;
+
+  @media only screen and (max-width: 800px) {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  > .content {
+    max-width: 360px;
+    margin: 0 5px;
+
+    @media only screen and (max-width: 800px) {
+      max-width: 460px;
+      margin: 10px 5px 0;
+    }
+  }
+}
+
+.wrapper-figure {
+  margin: 0 5px;
+
+  > .group-figure{
+    display: flex;
+    max-width: 480px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 440px) {
+      justify-content: space-around;
+    }
+  }
+}
+
+.group-figure {
+   .rounded-img {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .img {
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+
+    object-fit: cover;
+    object-position: center;
+    transition: $global-transition;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .caption {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: $color-green;
+    font-size: 12px;
+    max-width: 100px;
+    @include push--auto;
+  }
+}
+
+.wrapper-action {
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: 440px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  > .social-links {
+    @media only screen and (max-width: 440px) {
+      margin-top: 30px;
+    }
+  }
+
+  > .social-links a{
+    display: block;
+    margin-left: 20px;
+    color: $color-green;
+    font-weight: 700;
+    margin-bottom: 4px;
+    transition: $global-transition;    
+    @include underline-links($color-medium-green);
+   
+    &:hover {
+      color: $color-medium-green;
+      
+    }
+    .icon {
+      width: 20px;
+      margin-right: 5px;
+    }
+  }
+}

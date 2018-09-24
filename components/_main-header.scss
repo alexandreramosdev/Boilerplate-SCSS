@@ -1,30 +1,15 @@
 .main-header {
-  height: 100%;
-  background: 
-    url('../../assets/img/Rectangle-top.svg') no-repeat,
-    url('../../assets/img/bg-hero.png') no-repeat;
-  background-position: center top, top center;
-  background-size: fixed, cover;
+  background: linear-gradient(
+    to bottom,
+    $color-medium-green 6px,
+    $color-white 0
+  );
 
-  @include for-tablet-landscape-down {
-    background: 
-    url('../../assets/img/Rectangle-top.svg') no-repeat,
-    url('../../assets/img/bg-hero.png') no-repeat;
-  background-position: 53% top, top center;
-  background-size: fixed, cover;
-  }
-
-  @media only screen and (max-width: em(768)) {
-    background: 
-    url('../../assets/img/Rectangle-top.svg') no-repeat,
-    url('../../assets/img/bg-hero.png') no-repeat;
-  background-position: 58% top, top center;
-  background-size: fixed, cover;
-  }
-
-  @include for-tablet-portrait-down {
-    background: url('../../assets/img/bg-hero.png') no-repeat;
-  background-position: top center;
-  background-size: cover;
+  @media only screen and (max-width: 840px) {
+    background: linear-gradient(
+    to bottom,
+    $color-medium-green 110px,
+    $color-white 0
+  );
   }
 }

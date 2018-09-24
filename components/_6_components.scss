@@ -1,15 +1,28 @@
 @import 'main-header';
-@import 'topbar';
-@import 'top-nav';
-@import 'header-cta';
+@import 'wrapper-top';
+@import 'menuToggle';
 
+@import 'tiny-slider'; //slider
 
-@import 'section-sobre';
-@import 'section-acao';
-@import 'section-novidades';
+@import 'slider'; //slider
+
+@import 'section-aboutUs';
+@import 'wrapper-aboutUs';
+@import 'aboutUs-description';
+
+@import 'section-services';
+@import 'wrapper-services';
+
+@import 'section-segments';
+@import 'wrapper-segments';
+
+@import 'section-environment';
+@import 'wrapper-environment';
+
+@import 'section-weCallYou';
+@import 'wrapper-weCallYou'; 
+
+@import 'section-contact';
+@import 'wrapper-contact';
 
 @import 'main-footer';
-@import 'footer-nav';
-@import 'footer-copy';
-
-@import 'modal';

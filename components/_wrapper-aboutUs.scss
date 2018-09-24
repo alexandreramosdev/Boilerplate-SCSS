@@ -1,0 +1,81 @@
+.wrapper-aboutUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  @include push--auto;
+
+  @media only screen and ( max-width: 800px ) {
+    flex-wrap: wrap;    
+  }
+
+
+  > .img-left {
+    max-width: 565px;
+    margin-right: 24px;
+
+    @media only screen and ( max-width: 800px ) {
+      margin-right: 0;
+      margin-bottom: 100px;
+    }
+  }
+
+  > .content-right {
+    max-width: 317px;
+
+    @media only screen and ( max-width: 800px ) {
+      max-width: 90%;
+      
+    }
+
+    .btn {
+      max-width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+
+.img-left {
+  position: relative;
+
+  > .caption{
+    display: block;
+    position: absolute;
+    @include push--auto;
+    width: 352px;
+    height: 154px;
+    border-radius: $global-radius;
+    
+    background: url('../../img/svg/leaf.svg') no-repeat;
+    background-size: contain;
+    
+    bottom: -77px;
+    left: 50%;
+    transform: translateX(-50%);
+   
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1;
+    
+    color: $color-lighter-green;
+
+    @media only screen and (max-width: 600px) {
+      width: 300px;
+      height: 130px;
+      font-size: 25px;
+    }
+  }
+}
+
+.caption {
+  > .-white {
+    font-weight: 900;
+    color: $color-white;
+    display: block;
+    margin-top: 30px;   
+  }
+}
+

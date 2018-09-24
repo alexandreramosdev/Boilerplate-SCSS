@@ -3,10 +3,19 @@
    ========================================================================== */
 
 a {
-  color: $color-link;
+  background-color: transparent;
+  
+  &,
+  &:link,
+  &:active{ 
   text-decoration: none;
+  transition: $global-transition;
+  word-wrap: normal;
+  color: $color-link;
 
-  &:hover {
-    color: $color-hover;
-  }
+    &:hover,
+    &:focus {
+      color: $color-hover;
+    }
+  } 
 }
